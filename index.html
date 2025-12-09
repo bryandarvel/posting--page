@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posting Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+        <h1>Posting Page</h1>
+    </nav>
+
+    <main>
+        <section class="container">
+
+            <h2>Criar Post</h2>
+
+            <!-- FORMULÁRIO -->
+            <form id="form-post">
+
+                <label for="titulo">Título:</label>
+                <input type="text" id="titulo" placeholder="Digite o título" required>
+
+                <label for="conteudo">Conteúdo:</label>
+                <textarea id="conteudo" placeholder="Escreva seu conteúdo..." required></textarea>
+
+                <button type="submit">Enviar Post</button>
+            </form>
+
+            <!-- ÁREA DE RENDERIZAÇÃO DO POST -->
+            <article class="resultado">
+                <h2 id="renderizador-titulo"></h2>
+                <p id="renderizador-conteudo"></p>
+            </article>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 - Projeto Posting Page</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
